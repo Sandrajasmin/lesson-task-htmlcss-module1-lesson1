@@ -1,0 +1,51 @@
+
+body,
+html {
+    background-color: beige;  
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+.my-header {
+    display: flex;
+    background-color: black;
+    height: 48px;
+}
+.my-header span {
+   color: #ffff;
+   font-weight: 800;
+}
+
+.navigation {
+    background-color: transparent;
+}
+
+.navigation ul {
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+    padding: 30px;
+}
+
+.navigation ul li a{ 
+    color: #ffff;
+    text-decoration: none;
+
+}
+
+.hero-banner {
+    background-color: aqua;
+    background-image: url('/img/guitar-1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 420px;
+}
+
+.footer {
+    background-color: aqua;
+}
