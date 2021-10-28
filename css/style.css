@@ -7,19 +7,31 @@ html {
     padding: 0%;
 }
 
+#my-header{
+    background-color:black;
+}
+
 .my-header {
-    display: flex;
-    background-color: black;
+    display: block;
+    background-color: rgb(161, 153, 153);
     height: 48px;
 }
-.my-header span {
+
+/* ID: has the highest specificity level, it always wins
+Only way to overwrite it is by writing inline styles.
+*/
+
+
+.my-header .logo {
+    display: inline-block;
    color: #ffff;
-   font-weight: 800;
+   font-weight: 800;   
 }
 
 .navigation {
+    display: inline-block;
     background-color: transparent;
-}
+    }
 
 .navigation ul {
     margin: 0%;
@@ -31,6 +43,9 @@ html {
     display: inline-block;
     padding: 30px;
 }
+/* general selection: any anchor tag that inside .navigation
+will be yellow*/
+
 
 .navigation ul li a{ 
     color: #ffff;
@@ -38,14 +53,49 @@ html {
 
 }
 
+/* direct descendant of .navigation*/
+
+.navigation > a {
+    color: blue;
+    border: 1px dotted yellow;
+    padding: 10px;
+}
+
 .hero-banner {
     background-color: aqua;
     background-image: url('/img/guitar-1.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 420px;
+    height: 220px;
+}
+
+.inner {
+    width: 1080px;
+    margin: 0 auto;
+
 }
 
 .footer {
     background-color: aqua;
 }
+
+body#home-page {
+    background-color: white;
+}
+
+body#home-page h1 {
+    color: black;
+}
+
+#home-page h1 {
+    color: red;
+}
+
+body#guitar-page {
+    background-color: royalblue;
+}
+
+#guitar-page h1 {
+    color: lime;
+}
+
